@@ -1,0 +1,27 @@
+The TASK:
+Implement a grep-like utility in C++ that does a recursive search of a given query in all files in a directory.
+High-level requirements:
+
+    You should use only the C++ standard library.
+    You should use CMake as a build system.
+    There is a limitation on the version - up to C++20 standard. Or make sure that solution is supported by 3 major compilers - gcc (Linux), clang (MacOS) and msvc (Windows).
+    The utility accepts a query to search and a directory path and does a recursive search in a given directory.
+    The utility outputs results to the console.
+    The utility should work reasonably fast (e.g. utilize all cores during the search).
+    The solution should contain a written design document (README) and also include tests. You may use test frameworks if you want.
+    Please also provide instructions on how to build and test your project.
+
+Requests:
+
+    Please send the resulting work as a ZIP archive.
+    Please do not put.git directory into the archive.
+    Please do not put your name anywhere on your submitted assignment
+
+
+Additional details:
+
+    - The search string is applied to the file contents, not to the
+    filenames, similar to the grep unix utility
+    - At the minimum, it needs to support exact match of the search
+    string. They are free to use functions from the c++ standard library
+    - ./my_grep_like_util "ITEM_IM_SEARCHING_FOR" ~/path_to_search
